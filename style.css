@@ -1,0 +1,70 @@
+/* Core Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid #000;
+}
+
+.top-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-image-box img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(110%);
+}
+
+.info-panel {
+    padding: 10% 12%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-panel h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; }
+
+.bg-black { background-color: #000 !important; }
+
+/* Philosophy */
+.philosophy-section { padding: 100px 0; background-color: #fcfcfc; }
+.philosophy-text { font-size: 1.5rem; line-height: 1.9; text-align: center; color: #333; }
+.drop-cap { font-family: 'Playfair Display', serif; font-size: 5.5rem; float: left; margin-right: 15px; line-height: 1; color: #000; }
+
+/* Associates */
+.associates-section { padding: 100px 0; }
+.section-title { font-family: 'Playfair Display', serif; text-align: center; font-size: 3rem; margin-bottom: 60px; }
+.associate-card { text-align: center; margin-bottom: 30px; }
+.associate-card img { width: 100%; height: 400px; object-fit: cover; filter: grayscale(100%); transition: 0.5s; }
+.associate-card:hover img { filter: grayscale(0%); transform: scale(1.02); }
+
+/* Contact Details */
+.contact-details-section { padding: 100px 0; background-color: #ffffff; border-top: 1px solid #eee; }
+.contact-label { display: block; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; margin-bottom: 15px; text-transform: uppercase; }
+.contact-item p { font-size: 1rem; color: #444; }
+
+/* Button & Footer */
+.btn-cases { display: inline-block; padding: 18px 45px; border: 2px solid #000; color: #000; text-decoration: none; font-weight: 600; }
+.btn-cases:hover { background-color: #000; color: #fff; }
+.footer { background: #000; color: #fff; padding: 50px; text-align: center; }
+
+@media (max-width: 768px) {
+    .top-header h1 { font-size: 1.8rem; }
+    .contact-item.border-start.border-end { border: none !important; margin: 30px 0; }
+}
